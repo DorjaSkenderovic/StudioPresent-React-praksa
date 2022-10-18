@@ -1,0 +1,128 @@
+@import "../../styles/_variables.scss";
+
+footer {
+  div {
+    // border: 1px solid black;
+  }
+  color: $white-color;
+  margin-top: 1rem;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //   align-items: center;
+  height: 384px;
+  background-image: url("../../assets/kombikombi.png");
+
+  .footerUpContainer {
+    border: 1px solid red;
+    padding-top: 4rem;
+    display: flex;
+    flex: 1;
+    // align-items: center;
+    justify-content: stretch;
+
+    .footerUp {
+      display: flex;
+      gap: 5rem;
+      flex: 1;
+
+      & > div {
+        position: relative;
+
+        &::after {
+          content: "";
+          border-right: 1px solid rgba(255, 255, 255, 0.2);
+          position: absolute;
+          right: 0;
+          height: 10rem;
+        }
+      }
+
+      .footerLogo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex: 1;
+        margin-right: 2rem;
+      }
+
+      .footerMidLeft {
+        display: flex;
+        flex: 1;
+        gap: 2rem;
+        flex-direction: column;
+        .title {
+          h2 {
+            text-transform: uppercase;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 34px;
+          }
+        }
+
+        .address,
+        .telephone,
+        .mail {
+          display: flex;
+          gap: 1rem;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 160%;
+        }
+
+        .address {
+          align-items: center;
+        }
+
+        .telephone,
+        .mail {
+          p {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .footerMidRight {
+        flex: 1;
+        ul {
+          display: flex;
+          flex-direction: column;
+
+          li {
+            list-style-type: none;
+            text-transform: uppercase;
+            font-family: "Roboto Condensed";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
+
+      .footerRight {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .title {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+        }
+
+        .icons {
+          display: flex;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
