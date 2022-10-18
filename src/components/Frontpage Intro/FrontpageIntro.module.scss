@@ -1,0 +1,147 @@
+@import "../../styles/_variables.scss";
+
+.intro {
+    width: 100%;
+
+    .videoIntro {
+        position: relative;
+        width: 100%;
+
+        .video {
+            position: relative;
+            width: 100%;
+            z-index: -2;
+        }
+
+        .circleImg {
+            position: absolute;
+            bottom: 3rem;
+            left: 50vw;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .aboutDVG {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin: 3rem 0;
+        gap: 2rem;
+
+        .aboutIMG {
+            width: 50%;
+            height: 504px;
+        }
+
+        .about {
+            margin-right: 10rem;
+            width: 50%;
+
+            .aboutTitle {
+
+                .title {
+                    margin: 2rem 0 1rem 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 700;
+                    font-size: 42px;
+                    line-height: 34px;
+                    color: $main-title-color;
+                }
+
+                .line {
+                    height: 6px;
+                    width: 10vw;
+                    background-color: $main-line-color;
+                    margin-bottom: 1rem;
+                }
+
+                .subTitle {
+                    margin-bottom: 2rem;
+
+                    h3 {
+                        font-family: "Inter", sans-serif;
+                        font-size: 28px;
+                        font-weight: 400;
+                        line-height: 34px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: $main-text-color;
+                    }
+                }
+
+                hr {
+                    border: 1px solid;
+                    color: rgba(196, 196, 196, 0.4);
+                }
+            }
+
+            .description {
+                margin-top: 2rem;
+                font-family: "Roboto", sans-serif;
+
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 160%;
+                    color: $main-text-color;
+                }
+
+                .aboutUsBtn {
+                    margin-top: 5rem;
+                    display: inline-block;
+                    padding: 14px 16px;
+                    background-color: $main-line-color;
+                    border: 0;
+                    border: 2px solid $main-line-color;
+                    color: $white-color;
+                    text-align: center;
+                    font-weight: 500;
+                    width: auto;
+                    border-radius: 4px;
+                    font-size: 16px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .usSection {
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        h4 {
+            font-family: "Roboto", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            text-transform: uppercase;
+            color: $main-text-color;
+        }
+
+        .line {
+            height: 2px;
+            width: 10%;
+            background-color: $main-line-color;
+            margin-top: 0.5rem;
+        }
+    }
+}
