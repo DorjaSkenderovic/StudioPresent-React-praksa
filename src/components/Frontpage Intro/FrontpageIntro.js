@@ -36,7 +36,7 @@ const FrontpageIntro = () => {
             </div>
             <img src={require("../../assets/Distribucija.png")} alt="Pouzdana distribucija" className={styles.banner} />
 
-            <div class={styles.usSection}>
+            <div className={styles.usSection}>
                 <div>
                     <img src={require("../../assets/Partner.png")} alt="Nas partner" />
                     <h4>Postanite naš partner</h4>
