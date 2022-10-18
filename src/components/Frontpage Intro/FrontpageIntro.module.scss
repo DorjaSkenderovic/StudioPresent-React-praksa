@@ -27,6 +27,7 @@
     .aboutDVG {
         display: flex;
         position: relative;
+        align-items: flex-end;
         width: 100%;
         margin: 3rem 0;
         gap: 2rem;
@@ -95,15 +96,13 @@
 
                 .aboutUsBtn {
                     margin-top: 5rem;
-                    display: inline-block;
                     padding: 14px 16px;
+                    width: 184px;
+                    height: 48px;
                     background-color: $main-line-color;
-                    border: 0;
                     border: 2px solid $main-line-color;
                     color: $white-color;
                     text-align: center;
-                    font-weight: 500;
-                    width: auto;
                     border-radius: 4px;
                     font-size: 16px;
 
@@ -115,7 +114,7 @@
         }
     }
 
-    .banner{
+    .banner {
         width: 100%;
     }
 
@@ -143,5 +142,10 @@
             background-color: $main-line-color;
             margin-top: 0.5rem;
         }
+
+        @media only screen and (max-width: 1250px) {
+            flex-direction: column;
+        }
     }
+
 }

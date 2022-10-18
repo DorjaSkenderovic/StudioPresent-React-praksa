@@ -1,0 +1,35 @@
+@import "../../styles/_variables.scss";
+
+.manufacturers {
+    position: relative;
+    flex-direction: column;
+    color: $main-text-color;
+    text-align: center;
+    padding-top: 80px;
+
+    .title {
+        font-size: 28px;
+    }
+
+    .brands {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 0;
+        gap: 80px;
+    }
+
+    .brandBtn {
+        width: 255px;
+        height: 48px;
+        background-color: $main-line-color;
+        font-size: 16px;
+        color: $white-color;
+        border: 2px solid $main-line-color;
+        border-radius: 4px;
+        margin-bottom: 80px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
