@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.scss";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
+  const [active, setActive] = useState(0);
+
+  let linkClass = styles.active;
+  const activeLinkHandler = (num) => {
+    setActive(num);
+  };
   return (
     <header className={styles.header}>
       <div className={styles.up}>
