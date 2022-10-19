@@ -8,14 +8,17 @@ import "./styles/App.scss";
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <Header />
       <FrontpageIntro />
       <DvgBrojke />
       <Products />
+
+    
+
       <Manufacturers />
       <Footer />
-    </div>
+    </>
   );
 };
 

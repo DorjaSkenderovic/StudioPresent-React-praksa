@@ -34,7 +34,6 @@
         height: 10px;
         background: rgba(196, 196, 196, 0.4);
         border: 1px solid rgba(196, 196, 196, 0.4);
-
     }
 
     .products {
@@ -47,7 +46,6 @@
             border: 0;
             background-color: transparent;
         }
-
         .product {
             height: 336px;
             width: 224px;
@@ -57,7 +55,6 @@
             .productTitle,
             .line {
                 margin-left: 24px;
-
             }
 
             .productImg {
@@ -70,10 +67,8 @@
                 background-color: $main-line-color;
                 margin-top: 11px;
             }
-
         }
     }
-
 }
 
 .wrapper {
