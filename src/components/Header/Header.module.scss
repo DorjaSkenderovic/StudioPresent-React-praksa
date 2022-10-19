@@ -57,23 +57,6 @@
 
   .toggleButton {
     display: none;
-    position: absolute;
-    top: 1.25rem;
-    right: 1rem;
-    // display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-    margin: 0 1rem;
-
-    .bar {
-      height: 3px;
-      width: 100%;
-      background-color: $white-color;
-      border-radius: 10px;
-    }
   }
 
   .navbar {
@@ -94,6 +77,7 @@
         list-style-type: none;
         border: 0.5px solid rgba(136, 135, 135, 0.4);
         border-top: none;
+        text-align: center;
 
         &:hover {
           cursor: pointer;
@@ -117,5 +101,52 @@
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 780px) {
+  .header {
+    .toggleButton {
+      // display: none;
+      position: absolute;
+      top: 2rem;
+      right: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+      cursor: pointer;
+      margin: 0 1rem;
+
+      .bar {
+        height: 3px;
+        width: 100%;
+        background-color: $white-color;
+        border-radius: 10px;
+      }
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    .navbarMobile {
+      display: flex;
+      ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        z-index: 10;
+        width: 100%;
+
+        li {
+          background-color: $header-color;
+          padding: 1rem;
+          flex-direction: column;
+          border: 0.5px solid rgba(136, 135, 135, 0.4);
+          border-top: none;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
