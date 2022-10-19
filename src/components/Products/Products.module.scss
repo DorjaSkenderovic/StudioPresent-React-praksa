@@ -1,11 +1,19 @@
 @import "../../styles/_variables.scss";
 
 .ourProducts {
-    padding-top: 96px;
-    width: 100%;
-    height: 784px;
+
+  padding-top: 96px;
+  width: 100%;
+  height: 750px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $main-text-color;
+  background-color: $main-color;
+
+  .title {
+
     display: flex;
-    align-items: center;
     flex-direction: column;
     color: $main-text-color;
     background-color: $main-color;
@@ -37,47 +45,65 @@
 
     }
 
-    .products {
-        justify-content: center;
-        display: flex;
-        width: 100%;
-        gap: 16px;
+  .description {
+    margin-top: 3rem;
+    width: 470px;
+    height: 67px;
+    font-size: 14px;
+    line-height: 22.4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
 
-        .product {
-            height: 336px;
-            width: 224px;
-            background-color: $white-color;
-            text-transform: uppercase;
+  hr {
+    width: 480px;
+    height: 10px;
+    background: rgba(196, 196, 196, 0.4);
+    border: 1px solid rgba(196, 196, 196, 0.4);
+  }
 
-            .productTitle,
-            .line {
-                margin-left: 24px;
+  .products {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    gap: 16px;
 
-            }
+    .product {
+      height: 336px;
+      width: 224px;
+      background-color: $white-color;
+      text-transform: uppercase;
 
-            .productImg {
-                width: 224px;
-            }
+      .productTitle,
+      .line {
+        margin-left: 24px;
+      }
 
-            .line {
-                height: 2px;
-                width: 48px;
-                background-color: $main-line-color;
-                margin-top: 11px;
-            }
+      .productImg {
+        width: 224px;
+      }
 
-        }
+      .line {
+        height: 2px;
+        width: 48px;
+        background-color: $main-line-color;
+        margin-top: 11px;
+      }
     }
-
+  }
 }
 
 .wrapper {
-    height: 100%;
-    width: 100%;
-    position: relative;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
 
     .logo {
         position: absolute;
         bottom: -25px;
     }
 }
+
