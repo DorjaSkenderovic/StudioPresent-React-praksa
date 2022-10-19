@@ -81,7 +81,16 @@ const Products = () => {
                 alt="Plasticna kanta"
                 className={styles.productImg}
               />
-              <p className={styles.productTitle}>Plastične Kante</p>
+              <p className={styles.productTitle}>Plastične kante</p>
+              <div className={styles.line}> </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.product} key="4">
+              <img
+                src={require("../../assets/osvezivac.png")}
+                alt="Plasticna kanta"
+                className={styles.productImg}
+              />
+              <p className={styles.productTitle}>Osveživači</p>
               <div className={styles.line}> </div>
             </SwiperSlide>
           </a>
