@@ -43,6 +43,11 @@
         width: 100%;
         gap: 16px;
 
+        button {
+            border: 0;
+            background-color: transparent;
+        }
+
         .product {
             height: 336px;
             width: 224px;

@@ -10,9 +10,9 @@ const FrontpageIntro = () => {
                 {/* <img src={require("../../assets/arrow-down-circle.png")} alt="Arrow down circle" className={styles.circleImg} /> */}
                 <button>
                     <svg className={styles.circleSvg} width="58" height="57" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29 52.25C42.1168 52.25 52.75 41.6168 52.75 28.5C52.75 15.3832 42.1168 4.75 29 4.75C15.8832 4.75 5.25 15.3832 5.25 28.5C5.25 41.6168 15.8832 52.25 29 52.25Z" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path className={styles.arrow} d="M19.5 28.5L29 38L38.5 28.5" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path className={styles.arrow} d="M29 19V38" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M29 52.25C42.1168 52.25 52.75 41.6168 52.75 28.5C52.75 15.3832 42.1168 4.75 29 4.75C15.8832 4.75 5.25 15.3832 5.25 28.5C5.25 41.6168 15.8832 52.25 29 52.25Z" stroke="#F2F2F2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path className={styles.arrow} d="M19.5 28.5L29 38L38.5 28.5" stroke="#F2F2F2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path className={styles.arrow} d="M29 19V38" stroke="#F2F2F2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </button>
             </div>
@@ -46,21 +46,22 @@ const FrontpageIntro = () => {
 
             <div className={styles.usSection}>
                 <a href="#">
-                    <div>
+                    <div className={styles.card}>
                         <img src={require("../../assets/Partner.png")} alt="Naš partner" />
                         <p>Postanite naš partner</p>
                         <div className={styles.line}></div>
                     </div>
                 </a>
                 <a href="#">
-                    <div>
+                    <div className={styles.card}>
+
                         <img src={require("../../assets//Proizvodi.png")} alt="Naši proizvodi" />
                         <p>Naši proizvodi</p>
                         <div className={styles.line}></div>
                     </div>
                 </a>
                 <a href="#">
-                    <div>
+                    <div className={styles.card}>
                         <img src={require("../../assets/Uvoz.png")} alt="Uvoz iz Mađarske" />
                         <p>Uvoz iz Mađarske</p>
                         <div className={styles.line}></div>

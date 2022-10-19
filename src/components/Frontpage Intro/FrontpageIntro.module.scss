@@ -161,17 +161,19 @@
         display: flex;
         flex-flow: wrap;
         justify-content: space-around;
-        padding: 15px 0;
+        padding: 16px 10px;
 
         a {
             text-decoration: none;
         }
 
-        div {
+        .card {
+            padding: 5px;
             transition: all 400ms cubic-bezier(.47, 1, .5, .8);
 
             &:hover {
                 transform: scale(1.1);
+                box-shadow: 2px 2px 2px 1px $header-active;
             }
         }
 
