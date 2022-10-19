@@ -1,78 +1,152 @@
 @import "../../styles/_variables.scss";
 
 .header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+
+  .up,
+  .navbar {
     display: flex;
-    flex-direction: column;
-  
-    .up {
-      display: flex;
-      height: 75px;
-      width: 100%;
-      background-color: $header-color;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 5rem;
-  
-      .language {
-        ul {
-          display: flex;
-          gap: 1rem;
-  
-          li {
-            list-style-type: none;
-  
-            a {
-              text-decoration: none;
-              font-family: "Roboto", sans-serif;
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 18px;
-              letter-spacing: 0em;
-              text-align: left;
-              color: $header-text;
-              text-decoration-line: underline;
-            }
-  
-            .active {
-              text-decoration: none;
-              color: $header-active;
-            }
-          }
-        }
-      }
+  }
+
+  .up {
+    width: 100%;
+    background-color: $header-color;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+
+    .logo {
+      cursor: pointer;
     }
-  
-    .navbar {
-      display: flex;
-      justify-content: center;
-      height: 68px;
-      margin: 0 5rem;
-  
+
+    .language {
       ul {
         display: flex;
-        flex: 1;
-  
+        gap: 1rem;
+
         li {
-          padding: 2rem;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          flex: 1;
           list-style-type: none;
-          border: 0.5px solid rgba(136, 135, 135, 0.4);
-  
-          h3 {
-            font-family: "Roboto Condensed", sans-serif;
-            font-size: 16px;
+
+          a {
+            text-decoration: none;
+
+            font-size: 14px;
             font-weight: 400;
+            line-height: 1.2;
+            text-align: left;
+            color: $header-text;
+            text-decoration-line: underline;
+
+            &:hover {
+              text-decoration-line: none;
+              color: lighten($color: $header-text, $amount: 25%);
+            }
           }
-  
-          p {
-            font-family: "Roboto", sans-serif;
-            font-size: 12px;
+
+          .active {
+            text-decoration: none;
+            color: $header-active;
           }
         }
       }
     }
   }
+
+  .toggleButton {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+    margin: 0 5rem;
+
+    ul {
+      display: flex;
+      flex: 1;
+
+      li {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        list-style-type: none;
+        border: 0.5px solid rgba(136, 135, 135, 0.4);
+        border-top: none;
+        text-align: center;
+
+        &:hover {
+          cursor: pointer;
+          border-top: 1px solid rgba(136, 135, 135, 0.4);
+          background-color: darken($color: $header-color, $amount: 2%);
+        }
+
+        h3 {
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .header {
+    .toggleButton {
+      // display: none;
+      position: absolute;
+      top: 2rem;
+      right: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+      cursor: pointer;
+      margin: 0 1rem;
+
+      .bar {
+        height: 3px;
+        width: 100%;
+        background-color: $white-color;
+        border-radius: 10px;
+      }
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    .navbarMobile {
+      display: flex;
+      ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        z-index: 10;
+        width: 100%;
+
+        li {
+          background-color: $header-color;
+          padding: 1rem;
+          flex-direction: column;
+          border: 0.5px solid rgba(136, 135, 135, 0.4);
+          border-top: none;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
