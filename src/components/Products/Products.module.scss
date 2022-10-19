@@ -29,13 +29,24 @@
     margin-bottom: 3rem;
   }
 
+
+        button {
+            border: 0;
+            background-color: transparent;
+        }
+
+        .product {
+            height: 336px;
+            width: 224px;
+            background-color: $white-color;
+            text-transform: uppercase;
+
   hr {
     width: 480px;
     height: 10px;
     background: rgba(196, 196, 196, 0.4);
     border: 1px solid rgba(196, 196, 196, 0.4);
   }
-
   .products {
     justify-content: center;
     display: flex;
