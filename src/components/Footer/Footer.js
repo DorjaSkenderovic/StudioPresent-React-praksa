@@ -24,26 +24,42 @@ const Footer = () => {
                 alt="telephone svg"
               />
               <div className={styles.telephoneText}>
-                <p> +381 24 568 555</p>{" "}
+                <a href="#"> +381 24 568 555</a>
               </div>
             </div>
             <div className={styles.mail}>
               <img src={require("../../assets/Frame2.png")} alt="mailSvg" />
               <div className={styles.mailText}>
-                <p> office@dvgcomapny.com </p>
+                <a href="#"> office@dvgcompany.com</a>
               </div>
             </div>
           </div>
           <div className={styles.footerMidRight}>
             <ul>
-              <li>o nama</li>
-              <li>dvg</li>
-              <li>proizvodi</li>
-              <li>brendovi</li>
-              <li>distribucija</li>
-              <li>saradnja</li>
-              <li>novosti</li>
-              <li>kontakt </li>
+              <li>
+                <a href="#"> o nama</a>
+              </li>
+              <li>
+                <a href="#">dvg </a>
+              </li>
+              <li>
+                <a href="#"> proizvodi</a>
+              </li>
+              <li>
+                <a href="#">brendovi</a>
+              </li>
+              <li>
+                <a href="#">distribucija </a>
+              </li>
+              <li>
+                <a href="#"> saradnja</a>
+              </li>
+              <li>
+                <a href="#"> novosti</a>
+              </li>
+              <li>
+                <a href="#"> kontakt</a>
+              </li>
             </ul>
           </div>
           <div className={styles.footerRight}>
@@ -61,12 +77,19 @@ const Footer = () => {
       </div>
       <div className={styles.footerDown}>
         <div className={styles.copyText}>
-          Copyright © 2021 DVG Company, Subotica d.o.o. Sva prava zadržana.
+          <p>
+            Copyright © 2021 DVG Company, Subotica d.o.o. Sva prava zadržana.
+          </p>
         </div>
         <div className={styles.footerUslovi}>
-          Privatnost podatka Uslovi korišćenja
+          <a href="#">Privatnost podatka </a>
+          <a href="#">Uslovi korišćenja</a>
         </div>
-        <div className={styles.poweredBy}>Powered by:StudioPresent</div>
+        <div className={styles.poweredBy}>
+          <p>
+            Powered by:<a href="#">StudioPresent</a>
+          </p>
+        </div>
       </div>
     </footer>
   );
