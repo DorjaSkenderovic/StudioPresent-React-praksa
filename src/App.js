@@ -13,7 +13,7 @@ const App = () => {
       <DvgBrojke />
 
       <Products />
-
+      <Footer />
     </div>
   );
 };
