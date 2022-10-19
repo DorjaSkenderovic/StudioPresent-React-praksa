@@ -3,30 +3,29 @@ import React from "react";
 
 const DvgBrojke = () => {
 
+  const increment = (n, counter, length = 4000) => {
+    let start = Date.now()
+    let end = start + length
+    let interval = length / n;
+    setInterval(() => {
+      let time = Date.now()
+      if (time < end) {
+        let count = Math.floor((time - start) / interval)
+        counter.textContent = count;
+      } else {
+        counter.textContent = n;
+        clearInterval(this)
+      };
+    }, interval / 2);
+
+  };
+
   React.useEffect(() => {
     const counters = document.querySelectorAll('.value');
-    const speed = 200;
-
     counters.forEach(counter => {
-      const animate = () => {
-        const value = +counter.getAttribute('number');
-        const data = +counter.innerText;
-
-        const time = value / speed;
-        if (data < value) {
-          counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 1);
-        } else {
-          counter.innerText = value;
-        }
-
-      }
-
-      animate();
-    });
-  }, [])
-
-
+      increment(counter.getAttribute('number'), counter)
+    })
+  },[])
 
   return (
     <div className={styles.dvgBrojke}>
