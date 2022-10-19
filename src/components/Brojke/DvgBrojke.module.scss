@@ -68,6 +68,12 @@
         justify-content: center;
         flex-direction: column;
 
+        .firstBox{
+          display: flex;
+          font-size: 20px;
+          
+        }
+
         &::after {
           content: "";
           border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -83,9 +89,7 @@
           font-size: 46px;
           line-height: 34px;
           color: $white-color;
-          span {
-            font-size: 20px;
-          }
+
         }
 
         p {
