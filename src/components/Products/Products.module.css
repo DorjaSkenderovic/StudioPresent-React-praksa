@@ -6,6 +6,7 @@
   flex-direction: column;
   color: #474747;
   background-color: #f4f4f4;
+  padding-bottom: 150px;
 }
 .ourProducts .title {
   justify-content: center;
@@ -25,7 +26,7 @@
 }
 .ourProducts hr {
   width: 35%;
-  height: 10px;
+  height: 5px;
   background: rgba(196, 196, 196, 0.4);
   border: 1px solid rgba(196, 196, 196, 0.4);
 }
@@ -61,20 +62,22 @@
   background-color: #bf0f0f;
   margin-top: 11px;
 }
-
-.wrapper {
+.ourProducts .wrapper {
   height: 100%;
   width: 100%;
   position: relative;
 }
-.wrapper .logo {
+.ourProducts .wrapper .logo {
   position: absolute;
-  bottom: -25px;
+  bottom: -170px;
 }
 
 @media screen and (max-width: 650px) {
   .ourProducts {
     text-align: center;
+  }
+  .ourProducts hr {
+    width: 80%;
   }
   .ourProducts .products {
     background-color: #fff;
@@ -86,5 +89,9 @@
   }
   .ourProducts .logo {
     visibility: hidden;
+  }
+  .ourProducts .description {
+    width: 100%;
+    padding: 10px;
   }
 }/*# sourceMappingURL=Products.module.css.map */

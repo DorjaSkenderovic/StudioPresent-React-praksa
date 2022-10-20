@@ -8,6 +8,7 @@
   flex-direction: column;
   color: $main-text-color;
   background-color: $main-color;
+  padding-bottom: 150px;
 
   .title {
     justify-content: center;
@@ -29,7 +30,7 @@
 
   hr {
     width: 35%;
-    height: 10px;
+    height: 5px;
     background: rgba(196, 196, 196, 0.4);
     border: 1px solid rgba(196, 196, 196, 0.4);
   }
@@ -39,6 +40,7 @@
     display: flex;
     width: 100%;
     gap: 16px;
+
 
     a {
       text-decoration: none;
@@ -62,6 +64,7 @@
       .productTitle,
       .line {
         margin-left: 24px;
+  
       }
 
 
@@ -74,22 +77,26 @@
       }
     }
   }
-}
-
-.wrapper {
-  height: 100%;
-  width: 100%;
-  position: relative;
-
-  .logo {
-    position: absolute;
-    bottom: -25px;
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  
+    .logo {
+      position: absolute;
+      bottom: -170px;
+    }
   }
 }
+
 
 @media screen and (max-width: 650px) {
   .ourProducts {
     text-align: center;
+
+    hr{
+      width: 80%;
+    }
     .products {
       background-color: $white-color;
       flex-direction: column;
@@ -104,5 +111,9 @@
       visibility: hidden;
     }
 
+    .description{
+      width: 100%;
+      padding: 10px;
+    }
   }
 }
