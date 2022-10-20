@@ -21,7 +21,8 @@ footer {
     color: $white-color;
 
     &:hover {
-      color: darken($color: $white-color, $amount: 25%);
+      filter: invert(50%) sepia(0%) saturate(336%) hue-rotate(158deg)
+        brightness(100%) contrast(300%);
     }
   }
 
@@ -102,7 +103,11 @@ footer {
         .telephone,
         .mail {
           a {
-            text-decoration: underline;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }
@@ -135,10 +140,16 @@ footer {
 
         .icons {
           gap: 1rem;
+          // mask-image: url("../../assets/FooterLogo.png");
+          transition: all 1s;
+          transform-origin: 50% 50%;
 
           img {
             &:hover {
               cursor: pointer;
+              filter: invert(50%) sepia(0%) saturate(336%) hue-rotate(158deg)
+                brightness(100%) contrast(300%);
+              transform: scale(1.2);
             }
           }
         }

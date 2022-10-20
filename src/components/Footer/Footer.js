@@ -1,4 +1,11 @@
 import styles from "./Footer.module.scss";
+import facebook from "../../assets/Vector.svg";
+import twitter from "../../assets/Vector2.svg";
+import youtube from "../../assets/Vector3.svg";
+import messenger from "../../assets/Vector4.svg";
+import location from "../../assets/Lokacija.svg";
+import telephone from "../../assets/Telefon.svg";
+import mail from "../../assets/Mail.svg";
 
 const Footer = () => {
   return (
@@ -12,27 +19,33 @@ const Footer = () => {
             <div className={styles.title}>
               <h2>d.v.g company</h2>
             </div>
-            <div className={styles.address}>
-              <img src={require("../../assets/Frame1.png")} alt="addresssvg" />
-              <div className={styles.addressText}>
-                <p>Čantavirski put bb </p> <p>24000 Subotica, Srbija</p>
+            <a
+              href="https://goo.gl/maps/CmmmaytiKwTsBj1r7"
+              target={"_blank"}
+              rel={"noreferrer"}>
+              <div className={styles.address}>
+                <img src={location} alt="addresssvg" />
+                <div className={styles.addressText}>
+                  <p>Čantavirski put bb </p> <p>24000 Subotica, Srbija</p>
+                </div>
               </div>
-            </div>
-            <div className={styles.telephone}>
-              <img
-                src={require("../../assets/Vector2.png")}
-                alt="telephone svg"
-              />
-              <div className={styles.telephoneText}>
-                <a href="#"> +381 24 568 555</a>
+            </a>
+            <a href="tel:+381-24-568-555">
+              <div className={styles.telephone}>
+                <img src={telephone} alt="telephone svg" />
+                <div className={styles.telephoneText}>
+                  <p> +381 24 568 555</p>
+                </div>
               </div>
-            </div>
-            <div className={styles.mail}>
-              <img src={require("../../assets/Frame2.png")} alt="mailSvg" />
-              <div className={styles.mailText}>
-                <a href="#"> office@dvgcompany.com</a>
+            </a>
+            <a href="mailto:office@dvgcompany.com">
+              <div className={styles.mail}>
+                <img src={mail} alt="mailSvg" />
+                <div className={styles.mailText}>
+                  <mail> office@dvgcompany.com</mail>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div className={styles.footerMidRight}>
             <ul>
@@ -67,10 +80,13 @@ const Footer = () => {
               <p>Pratite nas:</p>
             </div>
             <div className={styles.icons}>
-              <img src={require("../../assets/Vector4.png")} alt="" />
-              <img src={require("../../assets/Vector5.png")} alt="" />
+              <img src={facebook} alt="facebook logo" />
+              <img src={twitter} alt="twitter logo" />
+              <img src={youtube} alt="youtube logo" />
+              <img src={messenger} alt="messenger logo" />
+              {/* <img src={require("../../assets/Vector5.png")} alt="" />
               <img src={require("../../assets/Frame3.png")} alt="" />
-              <img src={require("../../assets/Frame4.png")} alt="" />
+              <img src={require("../../assets/Frame4.png")} alt="" /> */}
             </div>
           </div>
         </div>
