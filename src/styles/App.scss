@@ -7,7 +7,6 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
-
 .swiper-button-next,
 .swiper-button-prev {
   color: transparent;
@@ -29,7 +28,6 @@
   position: relative !important;
   display: flex !important;
   right: 0;
-
 }
 
 .swiper-wrapper {
@@ -47,10 +45,16 @@
   }
 }
 
-#root {
-  //   height: 100vh;
-  //   display: flex;
-  //   align-items: stretch;
-  //   flex-direction: column;
-  //   justify-content: space-between;
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(224, 214, 214, 0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
 }
