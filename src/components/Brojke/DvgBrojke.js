@@ -43,15 +43,22 @@ const DvgBrojke = () => {
 
   const isVisible = useIsInViewport(numberRef);
   const [inViewPort, setInViewPort] = useState(false);
+
   useEffect(() => {
-    isVisible && setInViewPort(true);
+    if (isVisible) {
+      setInViewPort(true);
+      return;
+    }
+  }, [isVisible]);
+
+  useEffect(() => {
     if (inViewPort) {
       const counters = document.querySelectorAll(".value");
       counters.forEach((counter) => {
         incrementHandler(counter.getAttribute("number"), counter);
       });
     }
-  }, [inViewPort, isVisible]);
+  }, [inViewPort]);
 
   return (
     <div className={styles.dvgBrojke}>
