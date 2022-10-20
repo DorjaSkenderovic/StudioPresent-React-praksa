@@ -56,7 +56,6 @@ const FrontpageIntro = () => {
                 </a>
                 <a href="#">
                     <div className={styles.card}>
-
                         <img src={require("../../assets//Proizvodi.png")} alt="Naši proizvodi" />
                         <p>Naši proizvodi</p>
                         <div className={styles.line}></div>

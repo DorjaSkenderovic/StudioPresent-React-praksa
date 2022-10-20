@@ -27,8 +27,11 @@
   background-color: #fff;
   color: #bf0f0f;
 }
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .manufacturers .brands {
     flex-flow: wrap;
+  }
+  .manufacturers .brandBtn {
+    width: 70%;
   }
 }/*# sourceMappingURL=Manufacturers.module.css.map */

@@ -140,7 +140,7 @@
             
         }
 
-        @media only screen and (max-width: 800px) {
+        @media screen and (max-width: 800px) {
             flex-direction: column;
 
             .about,
@@ -152,6 +152,7 @@
                 margin-right: 0;
                 padding: 0 25px;
             }
+
         }
     }
 
@@ -172,7 +173,7 @@
 
         .card {
             margin-top: 26px;
-            padding: 5px;
+            padding: 4px;
             transition: all 400ms cubic-bezier(.47, 1, .5, .8);
 
             &:hover {
@@ -199,15 +200,13 @@
 
         }
 
-        @media only screen and (max-width: 920px) {
-            margin: 16px 5px;
-
-            a{
-                margin: 36px 0;
+        @media screen and (max-width:800){
+            .card{
+                img{
+                    width: 90%;
+                }
             }
-
-
+            
         }
-
     }
 }
