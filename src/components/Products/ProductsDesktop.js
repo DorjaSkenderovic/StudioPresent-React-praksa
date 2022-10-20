@@ -9,7 +9,7 @@ import { Pagination, Navigation } from "swiper";
 
 const ProductsDesktop = () => {
     return (
-        <div className={styles.products}>
+    <div className={styles.products}>
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
