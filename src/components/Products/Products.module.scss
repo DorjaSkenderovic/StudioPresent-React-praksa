@@ -3,7 +3,6 @@
 .ourProducts {
   padding-top: 96px;
   width: 100%;
-  height: 784px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -24,7 +23,6 @@
     font-size: 14px;
     line-height: 22.4px;
     text-align: center;
-    display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
   }
@@ -86,5 +84,25 @@
   .logo {
     position: absolute;
     bottom: -25px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ourProducts {
+    text-align: center;
+    .products {
+      background-color: $white-color;
+      flex-direction: column;
+
+      .product{
+        margin-top: 90px;
+        width: 50%;
+      }
+    }
+
+    .logo{
+      visibility: hidden;
+    }
+
   }
 }
