@@ -16,10 +16,13 @@
     background-color: $header-color;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5rem;
+    padding: 1rem 5%;
 
     .logo {
       cursor: pointer;
+      img {
+        height: 30px;
+      }
     }
 
     .language {
@@ -39,6 +42,10 @@
             text-align: left;
             color: $header-text;
             text-decoration-line: underline;
+
+            .short {
+              display: none;
+            }
 
             &:hover {
               text-decoration-line: none;
@@ -103,10 +110,16 @@
 
 @media (max-width: 780px) {
   .header {
+    .up {
+      .language {
+        ul {
+          margin-right: 3rem;
+        }
+      }
+    }
     .toggleButton {
-      // display: none;
       position: absolute;
-      top: 2rem;
+      top: 1.5rem;
       right: 1rem;
       display: flex;
       flex-direction: column;
@@ -145,6 +158,32 @@
           border: 0.5px solid rgba(136, 135, 135, 0.4);
           border-top: none;
           text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    .up {
+      .language {
+        ul {
+          margin-right: 5rem;
+          li {
+            list-style-type: none;
+
+            a {
+              text-decoration: none;
+              span {
+                display: none;
+              }
+              .short {
+                display: flex;
+                text-transform: uppercase;
+              }
+            }
+          }
         }
       }
     }

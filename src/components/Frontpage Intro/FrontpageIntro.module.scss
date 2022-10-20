@@ -136,6 +136,10 @@
             }
         }
 
+        @media (hover: none) {
+            
+        }
+
         @media only screen and (max-width: 800px) {
             flex-direction: column;
 
@@ -167,6 +171,7 @@
         }
 
         .card {
+            margin-top: 26px;
             padding: 5px;
             transition: all 400ms cubic-bezier(.47, 1, .5, .8);
 
@@ -191,15 +196,17 @@
             background-color: $main-line-color;
             margin-top: 0.5rem;
 
-            @media only screen and (max-width: 1250px) {
-                margin: 16px 5px;
-                a{
-                    margin: 36px 0;
-                }
-                .banner__after {
-                    width: 100%;
-                }
+
+        }
+
+        @media only screen and (max-width: 920px) {
+            margin: 16px 5px;
+
+            a{
+                margin: 36px 0;
             }
+
+
         }
 
     }

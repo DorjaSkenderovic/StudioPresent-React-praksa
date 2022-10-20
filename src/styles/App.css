@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -37,12 +36,11 @@
 .swiper-slide {
   display: flex !important;
   flex-direction: column;
-
-  img {
-    width: 60%;
-    height: 60%;
-    margin: 15px auto;
-  }
+}
+.swiper-slide img {
+  width: 60%;
+  height: 60%;
+  margin: 15px auto;
 }
 
 body::-webkit-scrollbar {
@@ -57,4 +55,4 @@ body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
   border-radius: 10px;
-}
+}/*# sourceMappingURL=App.css.map */
