@@ -7,16 +7,44 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+
 .swiper-button-next,
 .swiper-button-prev {
   color: transparent;
   background-position: center;
-  background-image: url("../assets/left-arrow.svg");
   padding: 2rem;
+}
+
+.swiper-button-prev {
+  background-image: url("../assets/left-arrow.svg");
 }
 
 .swiper-button-next {
   background-image: url("../assets/right-arrow.svg");
+}
+
+.swiper {
+  margin: 0 48px;
+  width: 60%;
+  position: relative !important;
+  display: flex !important;
+  right: 0;
+
+}
+
+.swiper-wrapper {
+  width: 60%;
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-direction: column;
+
+  img {
+    width: 60%;
+    height: 60%;
+    margin: 15px auto;
+  }
 }
 
 #root {

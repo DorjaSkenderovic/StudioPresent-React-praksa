@@ -46,6 +46,7 @@
 
   .dvgBrojkeNumbers {
     display: flex;
+    flex-flow: wrap;
     width: 100vw;
     height: 345px;
     justify-content: center;

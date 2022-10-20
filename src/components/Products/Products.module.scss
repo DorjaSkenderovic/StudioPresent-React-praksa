@@ -46,10 +46,6 @@
       text-decoration: none;
     }
 
-    button {
-      border: 0;
-      background-color: transparent;
-    }
     .product {
       height: 336px;
       width: 224px;
@@ -70,9 +66,7 @@
         margin-left: 24px;
       }
 
-      .productImg {
-        width: 224px;
-      }
+
 
       .line {
         height: 2px;
@@ -93,8 +87,4 @@
     position: absolute;
     bottom: -25px;
   }
-}
-
-.swiper-button-next {
-  color: red;
 }

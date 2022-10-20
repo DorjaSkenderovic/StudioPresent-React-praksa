@@ -53,19 +53,20 @@
         gap: 50px;
 
         .aboutIMG {
-            width: 50vw;
+            width: 50%;
 
         }
 
         .about {
             margin-right: 10rem;
-            width: 50vw;
+            width: 50%;
 
             .aboutTitle {
 
                 .title {
                     margin: 2rem 0 1rem 0;
                     display: flex;
+                    flex-flow: wrap;
                     align-items: center;
                     justify-content: flex-start;
                     font-family: "Roboto", sans-serif;
@@ -104,7 +105,6 @@
 
             .description {
                 margin-top: 2rem;
-                width: 506px;
 
                 p {
                     font-family: "Roboto", sans-serif;
@@ -112,7 +112,6 @@
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 160%;
-                    width: 524px;
                     color: $main-text-color;
                 }
 
@@ -193,7 +192,7 @@
             margin-top: 0.5rem;
 
             @media only screen and (max-width: 1250px) {
-                margin-bottom: 16px;
+                margin: 16px 5px;
                 a{
                     margin: 36px 0;
                 }
