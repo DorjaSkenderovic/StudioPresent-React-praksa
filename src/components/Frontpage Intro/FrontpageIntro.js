@@ -2,13 +2,23 @@ import React from "react";
 import styles from "./FrontpageIntro.module.scss";
 
 const FrontpageIntro = () => {
+    const scrollToSection = () => {
+        document.querySelector("#aboutDVG").scrollIntoView({behavior: "smooth"});
+      };
+
     return (
         <div className={styles.intro}>
             <div className={styles.videoIntro}>
                 <img src={require("../../assets/Video.png")} alt="Dvg Company Video" className={styles.video} />
-                <img src={require("../../assets/arrow-down-circle.png")} alt="Arrow down circle" className={styles.circleImg} />
+                <button onClick={scrollToSection}>
+                    <svg className={styles.circleSvg} width="58" height="57" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29 52.25C42.1168 52.25 52.75 41.6168 52.75 28.5C52.75 15.3832 42.1168 4.75 29 4.75C15.8832 4.75 5.25 15.3832 5.25 28.5C5.25 41.6168 15.8832 52.25 29 52.25Z" stroke="#F2F2F2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path className={styles.arrow} d="M19.5 28.5L29 38L38.5 28.5" stroke="#F2F2F2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path className={styles.arrow} d="M29 19V38" stroke="#F2F2F2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                </button>
             </div>
-            <div className={styles.aboutDVG}>
+            <div className={styles.aboutDVG} id="aboutDVG">
                 <img src={require("../../assets/DvgBuilding.png")} alt="Dvg building" className={styles.aboutIMG} />
                 <div className={styles.about}>
                     <div className={styles.aboutTitle}>
@@ -30,28 +40,35 @@ const FrontpageIntro = () => {
                             prostora koji zadovoljava sve segmente u pogledu smeštaja,
                             čuvanja i plasiranja robe.
                         </p>
-                        <button className={styles.aboutUsBtn}>Saznajte vise o nama</button>
+                        <button className={styles.aboutUsBtn}>Saznajte više o nama</button>
                     </div>
                 </div>
             </div>
             <img src={require("../../assets/Distribucija.png")} alt="Pouzdana distribucija" className={styles.banner} />
 
-            <div class={styles.usSection}>
-                <div>
-                    <img src={require("../../assets/Partner.png")} alt="Nas partner" />
-                    <h4>Postanite naš partner</h4>
-                    <div className={styles.line}></div>
-                </div>
-                <div>
-                    <img src={require("../../assets//Proizvodi.png")} alt="Nasi proizvodi" />
-                    <h4>Naši proizvodi</h4>
-                    <div className={styles.line}></div>
-                </div>
-                <div>
-                    <img src={require("../../assets/Uvoz.png")} alt="Uvoz iz madjarske" />
-                    <h4>Uvoz iz mađarske</h4>
-                    <div className={styles.line}></div>
-                </div>
+            <div className={styles.usSection}>
+                <a href="#">
+                    <div className={styles.card}>
+                        <img src={require("../../assets/Partner.png")} alt="Naš partner" />
+                        <p>Postanite naš partner</p>
+                        <div className={styles.line}></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div className={styles.card}>
+
+                        <img src={require("../../assets//Proizvodi.png")} alt="Naši proizvodi" />
+                        <p>Naši proizvodi</p>
+                        <div className={styles.line}></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div className={styles.card}>
+                        <img src={require("../../assets/Uvoz.png")} alt="Uvoz iz Mađarske" />
+                        <p>Uvoz iz Mađarske</p>
+                        <div className={styles.line}></div>
+                    </div>
+                </a>
             </div>
         </div>
     );
