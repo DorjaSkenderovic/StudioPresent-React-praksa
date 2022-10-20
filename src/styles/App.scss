@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import "../styles/variables";
 
 * {
   margin: 0;
@@ -28,6 +29,10 @@
   position: relative !important;
   display: flex !important;
   right: 0;
+  // .swiper-pagination-bullet
+  .swiper-pagination-bullet-active {
+    background-color: $main-line-color;
+  }
 }
 
 .swiper-wrapper {
