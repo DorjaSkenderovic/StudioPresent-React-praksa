@@ -42,7 +42,7 @@ const Footer = () => {
               <div className={styles.mail}>
                 <img src={mail} alt="mailSvg" />
                 <div className={styles.mailText}>
-                  <mail> office@dvgcompany.com</mail>
+                  <p> office@dvgcompany.com</p>
                 </div>
               </div>
             </a>
@@ -84,9 +84,6 @@ const Footer = () => {
               <img src={twitter} alt="twitter logo" />
               <img src={youtube} alt="youtube logo" />
               <img src={messenger} alt="messenger logo" />
-              {/* <img src={require("../../assets/Vector5.png")} alt="" />
-              <img src={require("../../assets/Frame3.png")} alt="" />
-              <img src={require("../../assets/Frame4.png")} alt="" /> */}
             </div>
           </div>
         </div>
