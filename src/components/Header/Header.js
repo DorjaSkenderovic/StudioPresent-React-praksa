@@ -14,15 +14,22 @@ const Header = () => {
         <div className={styles.language}>
           <ul>
             <li>
-              <a href="#" className={styles.active}>
-                Srpski
+              <a href="#" className={styles.active} data-abbr="SR">
+                <span> Srpski</span>
+                <span className={styles.short}>sr</span>
               </a>
             </li>
             <li>
-              <a href="#"> English</a>
+              <a href="#">
+                <span> English</span>
+                <span className={styles.short}>en</span>
+              </a>
             </li>
             <li>
-              <a href="#"> Magyar</a>
+              <a href="#">
+                <span> Magyar </span>
+                <span className={styles.short}>hu</span>
+              </a>
             </li>
           </ul>
         </div>
