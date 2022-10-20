@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import styles from "./Products.module.scss";
 import logoVector from "../../assets/VectorLogo.png";
 import ProductsDesktop from "./ProductsDesktop";
 
 const Products = () => {
+
+  console.log(window.innerWidth);
 
   return (
     <div className={styles.ourProducts}>
