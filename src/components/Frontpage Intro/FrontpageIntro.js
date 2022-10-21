@@ -6,7 +6,10 @@ const FrontpageIntro = () => {
   const scrollToSection = () => {
     document.querySelector("#aboutDVG").scrollIntoView({ behavior: "smooth" });
   };
-  AOS.init();
+
+  AOS.init({
+    duration: 1000
+  });
   return (
     <div className={styles.intro}>
       <div className={styles.videoIntro}>
@@ -78,7 +81,7 @@ const FrontpageIntro = () => {
           </div>
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-anchor={styles.aboutUsBtn}>
+      <div data-aos="zoom-in-up" data-aos-anchor-placement="center">
         <img
           src={require("../../assets/Distribucija.png")}
           alt="Pouzdana distribucija"
