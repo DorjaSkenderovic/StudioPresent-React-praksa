@@ -9,7 +9,7 @@
 
         .video {
             width: 100%;
-            height: 81vh;
+            height: calc(100vh - 120px);
         }
 
         .circleSvg {
