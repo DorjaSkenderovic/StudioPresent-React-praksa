@@ -98,9 +98,11 @@
       width: 80%;
     }
     .products {
-      background-color: $white-color;
       flex-direction: column;
 
+      a{
+        background-color: aqua;
+      }
       .product{
         margin-top: 90px;
         width: 50%;
