@@ -37,10 +37,10 @@
 
   .products {
     justify-content: center;
+    align-items: center;
     display: flex;
     width: 100%;
     gap: 16px;
-
 
     a {
       text-decoration: none;
@@ -64,10 +64,7 @@
       .productTitle,
       .line {
         margin-left: 24px;
-  
       }
-
-
 
       .line {
         height: 2px;
@@ -81,7 +78,7 @@
     height: 100%;
     width: 100%;
     position: relative;
-  
+
     .logo {
       position: absolute;
       bottom: -170px;
@@ -89,29 +86,56 @@
   }
 }
 
-
 @media screen and (max-width: 650px) {
   .ourProducts {
     text-align: center;
 
-    hr{
+    hr {
       width: 80%;
     }
     .products {
-      background-color: $white-color;
       flex-direction: column;
+      align-items: center;
 
-      .product{
+      a {
+        background-color: $white-color;
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        .descriptionContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .productTitle {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          color: $main-text-color;
+        }
+
+        .line {
+          height: 0.2rem;
+          background: $main-line-color;
+          width: 10vw;
+        }
+      }
+
+      .product {
         margin-top: 90px;
         width: 50%;
       }
     }
 
-    .logo{
+    .logo {
       visibility: hidden;
     }
 
-    .description{
+    .description {
       width: 100%;
       padding: 10px;
     }
