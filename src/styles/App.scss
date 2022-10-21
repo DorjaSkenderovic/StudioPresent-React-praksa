@@ -8,18 +8,18 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: transparent;
-  background-position: center;
+.prev,
+.next {
+  cursor: pointer;
+  justify-content: center;
   padding: 2rem;
-}
-
-.swiper-button-prev {
+  border-radius: 50%;
   background-image: url("../assets/left-arrow.svg");
+  background-position: center;
+  border: none;
 }
 
-.swiper-button-next {
+.next {
   background-image: url("../assets/right-arrow.svg");
 }
 
@@ -29,7 +29,6 @@
   position: relative !important;
   display: flex !important;
   right: 0;
-  // .swiper-pagination-bullet
   .swiper-pagination-bullet-active {
     background-color: $main-line-color;
   }
