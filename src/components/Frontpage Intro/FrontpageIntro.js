@@ -1,15 +1,52 @@
-import React from "react";
+import React,{ useEffect, useMemo, useRef, useState } from "react";
 import styles from "./FrontpageIntro.module.scss";
 import AOS from "aos";
+
 import "aos/dist/aos.css";
 const FrontpageIntro = () => {
   const scrollToSection = () => {
     document.querySelector("#aboutDVG").scrollIntoView({ behavior: "smooth" });
   };
+  const parallax = useRef(null);
+  const useIsInViewport = (ref) => {
+    const [isIntersecting, setIsIntersecting] = useState(false);
 
-  AOS.init({
-    duration: 1000
-  });
+    const observer = useMemo(
+      () =>
+        new IntersectionObserver(([entry]) =>
+          setIsIntersecting(entry.isIntersecting)
+        ),
+      []
+    );
+   
+    
+    useEffect(() => {
+      observer.observe(ref.current);
+      return () => {
+        observer.disconnect();
+      };
+    }, [ref, observer]);
+
+    return isIntersecting;
+  };
+  const isVisible = useIsInViewport(parallax);
+  const [inViewPort, setInViewPort] = useState(false);
+
+  useEffect(() => {
+    if (isVisible) {
+      setInViewPort(true);
+      return;
+    }
+  }, [isVisible]);
+
+  useEffect(() => {
+    if (inViewPort) {
+      AOS.init({
+        duration: 2000
+      });
+    }
+  }, [inViewPort]);
+
   return (
     <div className={styles.intro}>
       <div className={styles.videoIntro}>
@@ -81,7 +118,7 @@ const FrontpageIntro = () => {
           </div>
         </div>
       </div>
-      <div data-aos="zoom-in-up" data-aos-anchor-placement="center">
+      <div data-aos="zoom-in-up" data-aos-anchor-placement="center" ref={parallax}>
         <img
           src={require("../../assets/Distribucija.png")}
           alt="Pouzdana distribucija"
