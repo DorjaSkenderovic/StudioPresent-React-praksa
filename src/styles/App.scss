@@ -12,15 +12,13 @@
 .next {
   cursor: pointer;
   justify-content: center;
-  padding: 2rem;
   border-radius: 50%;
-  background-image: url("../assets/left-arrow.svg");
   background-position: center;
-  border: none;
-}
 
-.next {
-  background-image: url("../assets/right-arrow.svg");
+  &:hover {
+    filter: invert(49%) sepia(93%) saturate(3852%) hue-rotate(333deg)
+      brightness(127%) contrast(108%);
+  }
 }
 
 .swiper {
@@ -40,6 +38,7 @@
 
 .swiper-slide {
   display: flex !important;
+  cursor: pointer;
   flex-direction: column;
 
   img {

@@ -10,7 +10,36 @@ import { Pagination, Navigation } from "swiper";
 const ProductsDesktop = () => {
   return (
     <div className={styles.products}>
-      <button className="prev"></button>
+      <svg
+        width="58"
+        height="59"
+        viewBox="0 0 58 59"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="prev">
+        <path
+          d="M5.25 29.5C5.25 42.6168 15.8832 53.25 29 53.25C42.1168 53.25 52.75 42.6168 52.75 29.5C52.75 16.3832 42.1168 5.75 29 5.75C15.8832 5.75 5.25 16.3832 5.25 29.5Z"
+          stroke="#BF0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M29 20L19.5 29.5L29 39"
+          stroke="#bf0f0f"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M38.5 29.5H19.5"
+          stroke="#bf0f0f"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -91,7 +120,35 @@ const ProductsDesktop = () => {
           </SwiperSlide>
         </a>
       </Swiper>
-      <button className="next"></button>
+      <svg
+        width="58"
+        height="59"
+        viewBox="0 0 58 59"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="next">
+        <path
+          d="M52.75 29.5C52.75 16.3832 42.1168 5.75 29 5.75C15.8832 5.75 5.25 16.3832 5.25 29.5C5.25 42.6168 15.8832 53.25 29 53.25C42.1168 53.25 52.75 42.6168 52.75 29.5Z"
+          stroke="#BF0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M29 39L38.5 29.5L29 20"
+          stroke="#BF0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M19.5 29.5H38.5"
+          stroke="#BF0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
     </div>
   );
 };
